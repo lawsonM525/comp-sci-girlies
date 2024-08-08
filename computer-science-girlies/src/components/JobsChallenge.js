@@ -39,7 +39,7 @@ const JobsChallenge = () => (
           <li>Company A</li>
           <li>Company B</li>
           <li>Company C</li>
-          <li>Company D</li>
+          <li>Company Deeeee</li>
         </ul>
       </div>
 
