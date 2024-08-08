@@ -20,3 +20,50 @@
    .animate-scroll {
      animation: scroll 30s linear infinite;
    }
+
+   .pixel-button-container {
+    display: inline-block;
+    position: relative;
+    padding: 2px;
+    background-color: white;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .pixel-button-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 2px 2px;
+    pointer-events: none;
+    border-radius: 12px;
+  }
+  
+  .pixel-button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    color: white;
+    background-color: #FB6F92;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .pixel-button-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .pixel-button:hover {
+    background-color: #ff97b7;
+  }
+  
+  .pixel-button:active {
+    transform: scale(0.95);
+  }

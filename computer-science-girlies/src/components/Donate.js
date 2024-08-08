@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Donate = () => (
-  <div className="flex flex-col h-screen">
+  <div className="flex flex-col h-screen pt-16">
     <div className="flex-grow flex flex-col">
       <iframe 
         src="https://hcb.hackclub.com/donations/start/computer-science-girlies" 

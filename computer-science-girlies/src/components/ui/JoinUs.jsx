@@ -7,14 +7,15 @@ const JoinUs = () => {
   };
 
   return (
-    <PopupButton
-      id="01J4RJQAJMTN3QD66RHDQEEK1J"
-      style={{ fontSize: 20 }}
-      className="my-button"
-      onClick={handleClick}
-    >
-      Join Us!
-    </PopupButton>
+    <div className="pixel-button-container">
+      <PopupButton
+        id="qv7O6d5r"
+        className="pixel-button"
+        onClick={handleClick}
+      >
+        Join Us!
+      </PopupButton>
+    </div>
   );
 };
 

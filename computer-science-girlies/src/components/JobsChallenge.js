@@ -1,27 +1,61 @@
 import React from 'react';
 
 const JobsChallenge = () => (
-  <div className="container mx-auto px-4 py-8">
-    <h1 className="text-4xl font-bold mb-6">#1000jobs Challenge</h1>
-    <p className="mb-4">
-      The #1000jobs Challenge is our initiative to help 1,000 women secure jobs in the tech industry by the end of 2024.
-    </p>
-    <h2 className="text-2xl font-semibold mt-6 mb-4">How It Works</h2>
-    <ol className="list-decimal list-inside mb-4">
-      <li>Sign up for the challenge</li>
-      <li>Access our exclusive job preparation resources</li>
-      <li>Attend virtual job fairs and networking events</li>
-      <li>Receive mentorship and interview coaching</li>
-      <li>Apply to jobs with our partner companies</li>
-    </ol>
-    <h2 className="text-2xl font-semibold mt-6 mb-4">Progress Tracker</h2>
-    <div className="bg-gray-200 rounded-full h-6 w-full">
-      <div className="bg-blue-500 rounded-full h-6" style={{width: '35%'}}></div>
+  <div className="container mx-auto px-4 py-20 pt-24">
+    <h1 className="text-4xl font-bold mb-8 text-center pixel-font">#1000jobs Challenge</h1>
+    
+    <div className="grid grid-cols-4 gap-8">
+      <div className="col-span-4 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-semibold mb-4 pixel-font">Our Plan</h2>
+        <p className="mb-4">
+          We're partnering with recruiters to get access to our top diverse talent. We're also bringing in employees and experts to give workshops on various important topics like:
+        </p>
+        <ul className="list-disc list-inside mb-4">
+          <li>How to ace a technical interview</li>
+          <li>How to LinkedIn like a girlboss</li>
+          <li>Resume building and personal branding</li>
+          <li>Networking strategies</li>
+        </ul>
+      </div>
+
+      <div className="col-span-2 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-semibold mb-4 pixel-font">Training Roadmap</h2>
+        <ol className="list-decimal list-inside mb-4">
+          <li><strong>Gain Experience:</strong> Participate in projects and internships</li>
+          <li><strong>Show Experience:</strong> Create a compelling portfolio and resume</li>
+          <li><strong>Share Experience:</strong> Leverage social media and professional networks</li>
+          <li><strong>Ace the Technical Interview:</strong> Master coding challenges</li>
+          <li><strong>Ace the Behavioral Interview:</strong> Present yourself effectively</li>
+        </ol>
+      </div>
+
+      <div className="col-span-2 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-semibold mb-4 pixel-font">Our Partners</h2>
+        <p className="mb-4">
+          We've partnered with leading companies to recruit from our community and provide workshops. Here are some of our amazing partners:
+        </p>
+        <ul className="list-disc list-inside mb-4">
+          <li>Company A</li>
+          <li>Company B</li>
+          <li>Company C</li>
+          <li>Company D</li>
+        </ul>
+      </div>
+
+      <div className="col-span-2 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-semibold mb-4 pixel-font">Progress Tracker</h2>
+        <div className="bg-gray-200 rounded-full h-6 w-full mb-4">
+          <div className="bg-blue-500 rounded-full h-6" style={{width: '35%'}}></div>
+        </div>
+        <p className="mb-6">350 out of 1000 jobs secured</p>
+      </div>
+
+      <div className="col-span-2 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg flex items-center justify-center">
+        <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 pixel-font text-xl transform hover:scale-105 transition-transform duration-200">
+          Join the Challenge
+        </button>
+      </div>
     </div>
-    <p className="mt-2">350 out of 1000 jobs secured</p>
-    <button className="mt-6 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-      Join the Challenge
-    </button>
   </div>
 );
 
