@@ -1,0 +1,12 @@
+name: comp-sci-girlies-trigger-prod
+description: Trigger prod build/deploy
+filename: cloudbuild.yaml
+github:
+  owner: lawsonM525
+  name: comp-sci-girlies
+  push:
+    branch: ^main$
+substitutions:
+  _REGION: us-central1
+  _SERVICE_NAME: cs-girlies
+  _BRANCH_NAME: main
