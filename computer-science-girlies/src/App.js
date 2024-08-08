@@ -15,7 +15,7 @@ import React from 'react';
        <HighlightedSections />
        <EventsPreview />
        <BlogTeaser />
-       <PartnerCompanies />
+       <PartnerCompanies /> 
      </div>
    );
 
