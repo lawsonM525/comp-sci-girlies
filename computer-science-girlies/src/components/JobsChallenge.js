@@ -1,7 +1,8 @@
 import React from 'react';
+import JoinUs from "./ui/JoinUs";
 
 const JobsChallenge = () => (
-  <div className="container mx-auto px-4 py-20 pt-24">
+  <div className="container mx-auto px-4 py-20 pt-24 text-white">
     <h1 className="text-4xl font-bold mb-8 text-center pixel-font">#1000jobs Challenge</h1>
     
     <div className="grid grid-cols-4 gap-8">
@@ -42,18 +43,16 @@ const JobsChallenge = () => (
         </ul>
       </div>
 
-      <div className="col-span-2 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
+      <div className="col-span-4 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg">
         <h2 className="text-2xl font-semibold mb-4 pixel-font">Progress Tracker</h2>
         <div className="bg-gray-200 rounded-full h-6 w-full mb-4">
-          <div className="bg-blue-500 rounded-full h-6" style={{width: '35%'}}></div>
+          <div className="bg-pink-700 rounded-full h-6" style={{width: '35%'}}></div>
         </div>
         <p className="mb-6">350 out of 1000 jobs secured</p>
       </div>
 
-      <div className="col-span-2 bg-white bg-opacity-20 p-6 rounded-lg shadow-lg flex items-center justify-center">
-        <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 pixel-font text-xl transform hover:scale-105 transition-transform duration-200">
-          Join the Challenge
-        </button>
+      <div className="col-span-4 mt-4">
+        <JoinUs buttonText="Join the Challenge" className="w-full" />
       </div>
     </div>
   </div>

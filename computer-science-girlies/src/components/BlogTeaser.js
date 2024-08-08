@@ -17,7 +17,7 @@ const BlogTeaser = () => (
               <CardTitle className="pixel-font text-white">{post}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p className="text-white">Coming Soon...</p>
             </CardContent>
             <CardFooter>
               <Button variant="link" className="text-white hover:text-pink-300 pixel-font">Read More</Button>

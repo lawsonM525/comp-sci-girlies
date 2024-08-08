@@ -1,19 +1,19 @@
 import React from 'react';
 import { PopupButton } from '@typeform/embed-react';
 
-const JoinUs = () => {
+const JoinUs = ({ buttonText = "Join Us!", className = "" }) => {
   const handleClick = () => {
     console.log('Button clicked!');
   };
 
   return (
-    <div className="pixel-button-container">
+    <div className={`pixel-button-container ${className}`}>
       <PopupButton
         id="qv7O6d5r"
-        className="pixel-button"
+        className="pixel-button w-full"
         onClick={handleClick}
       >
-        Join Us!
+        {buttonText}
       </PopupButton>
     </div>
   );
