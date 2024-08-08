@@ -1,27 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logoImage from '../assets/images/circle_logo.png'; // Adjust the path as needed
 
 const NavBar = () => (
-  <nav className="bg-pink-500 p-4 flex justify-between items-center">
+  <nav className="absolute top-0 left-0 right-0 p-4 flex justify-between items-center z-10">
     <ul className="flex space-x-6 text-white">
-      <li><a href="#about" className="hover:underline">About Us</a></li>
-      <li><a href="#challenge" className="hover:underline">#1000Jobs</a></li>
+      <li><Link to="/About" className="hover:underline font-semibold text-xl pixel-font">About Us</Link></li>
+      <li><Link to="/JobsChallenge" className="hover:underline font-semibold text-xl pixel-font">#1000Jobs</Link></li>
     </ul>
-    <div className="text-white text-2xl font-bold pixel-font">
-      &lt;CSG/&gt;
-    </div>
+    <Link to="/" className="flex items-center">
+      <img src={logoImage} alt="CSG Logo" className="h-10 w-auto" />
+    </Link>
     <ul className="flex space-x-6 text-white">
-      <li><a href="#join" className="hover:underline">Join Us</a></li>
-      <li>
-        <a href="https://hcb.hackclub.com/donations/start/computer-science-girlies" 
-        className="hover:underline" 
-        target="_blank" 
-        rel="noopener noreferrer">
-          Donate
-          </a>
-          </li>
+      <li><Link to="/JoinUs" className="hover:underline font-semibold text-xl pixel-font">Join Us</Link></li>
+      <li><Link to="/Donate" className="hover:underline font-semibold text-xl pixel-font">Donate</Link></li>
     </ul>
   </nav>
-/** TODO: Link to a donate page and then embed the iFrame from HCB */
 );
 
 export default NavBar;
