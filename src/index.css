@@ -68,7 +68,20 @@
     transform: scale(0.95);
   }
 
-  body {
-    cursor: url('../src/assets/icons/clicker.png');
+  body,
+  a,
+  button,
+  [role="button"],
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    cursor: url('./assets/icons/clicker-small.png') 0 0, auto;
   }
-  
+  a:hover,
+  button:hover,
+  [role="button"]:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover {
+    cursor: url('./assets/icons/clicker-small-pink.png') 0 0, auto;
+  }
