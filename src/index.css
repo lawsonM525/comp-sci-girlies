@@ -67,3 +67,8 @@
   .pixel-button:active {
     transform: scale(0.95);
   }
+
+  body {
+    cursor: url('../src/assets/icons/clicker.png');
+  }
+  
