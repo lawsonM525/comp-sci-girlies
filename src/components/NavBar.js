@@ -33,7 +33,7 @@ const NavBar = () => (
       <li><NavItem to="/About" label="Our Story.txt" iconType="document" /></li>
       <li><NavItem to="/1000Jobs" label="1000 Jobs.txt" iconType="document" /></li>
     </ul>
-    <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:block">
       <Link to="/" className="flex flex-col items-center hover:scale-110 transition-transform duration-200">
         <img src={logoImage} alt="CSG Logo" className="h-10 w-auto" />
         <span className="text-xs mt-1 text-white" style={{ fontFamily: 'Arial, sans-serif' }}>Home.html</span>
@@ -42,8 +42,8 @@ const NavBar = () => (
     <ul className="flex space-x-6 text-white">
       <li><NavItem to="/resources" label="Resources" iconType="folder" /></li>
       {/**TODO: Replace with a different link like Resources or Events or Contact Us */}
-      <li><NavItem to="/JoinUs" label="JOIN US.html" iconType="link" /></li>
-          </ul>
+      {/**<li><NavItem to="/JoinUs" label="JOIN US.html" iconType="link" /></li>*/}
+    </ul>
   </nav>
 );
 
