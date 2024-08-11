@@ -10,7 +10,8 @@ import JobsChallenge from './components/JobsChallenge';
 import Donate from './components/Donate';
 import JoinUs from './components/JoinUs';
 import FullBlogPost from './components/FullBlogPost';
-import Resources from './components/Resources'; // Added this import
+import Resources from './components/Resources';
+import Testimonials from './components/Testimonials';
 
 const AppContent = () => {
   const location = useLocation();
@@ -33,7 +34,8 @@ const AppContent = () => {
           <Route path="/donate" element={<Donate />} />
           <Route path="/JoinUs" element={<JoinUs />} />
           <Route path="/blog/:id" element={<FullBlogPost />} />
-          <Route path="/resources" element={<Resources />} /> {/* Added this route */}
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
       </div>
       <Footer />
