@@ -34,7 +34,6 @@ const Footer = () => (
       <FooterItem to="/" label="Home" iconType="folder" />
       <FooterItem to="/events" label="Events" iconType="document" />
       {/**<FooterItem to="/blog" label="Blog" iconType="folder" />*/}
-      <FooterItem to="/contact" label="Email Us" mobileLabel="Email" iconType="link" />
       <FooterItem to="/testimonials" label="Testimonials" iconType="document" />
     </div>
     <div className="ml-4 flex space-x-2">
